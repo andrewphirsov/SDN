@@ -17,7 +17,7 @@ output = net_connect.send_config_set (config_commands)
 print (output)
 
 for n in range (2,20):
-    print ('Creating VLAN' + str(n))
+    #print ('Creating VLAN' + str(n))
     config_commands = ['vlan ' + str (n), "name " + str(n)]
     #output = net_connect.send_config_set (config_commands)
     net_connect.send_config_set (config_commands)
