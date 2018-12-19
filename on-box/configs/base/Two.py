@@ -17,5 +17,5 @@ output = net_connect.send_config_set (config_commands)
 print (output)
     
 
-
+#test
 #output = net_connect.send_config_set("int loop 0", "ip address 1.1.1.1 255.255.255.0")
