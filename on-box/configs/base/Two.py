@@ -16,13 +16,16 @@ config_commands = ["hostname PY_SWITCH","int loop 0","ip address 1.1.1.1 255.255
 output = net_connect.send_config_set (config_commands)
 print (output)
 
+fvlan=2
+lvlan=20
+print ('Creating VLANs' + str(fvlan) + "to" + str(lvlan))
 for n in range (2,20):
-    #print ('Creating VLAN' + str(n))
     config_commands = ['vlan ' + str (n), "name " + str(n)]
+    print ('.')
     #output = net_connect.send_config_set (config_commands)
     net_connect.send_config_set (config_commands)
     #print (output)
-    
+print ('VLANs' + str(fvlan) + "to" + str(lvlan) + "created")
 
 #test
 #output = net_connect.send_config_set("int loop 0", "ip address 1.1.1.1 255.255.255.0")
