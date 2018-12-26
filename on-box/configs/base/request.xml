@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<nc:rpc message-id="1" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+ xmlns="http://www.cisco.com/nxos:1.0:nfcli">
+ <nc:get>
+   <nc:filter type="subtree">
+     <show>
+       <xml>
+         <server>
+           <status/>
+         </server>
+       </xml>
+     </show>
+   </nc:filter>
+ </nc:get>
+</nc:rpc>]]>]]>

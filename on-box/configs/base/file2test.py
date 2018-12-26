@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+from pprint import pprint
 dataFolder=Path(r"C:\Data\Python\SDN\SDN\on-box\configs\base")
 logfile=dataFolder/'example.log'
 def readlog(log):
@@ -17,7 +18,6 @@ if __name__ == "__main__":
     print ("Adding new log entry")
     writelog(logfile,name)
     print('')
-
     print('LogFile now contains:')
     print('--------------------')
     readlog(logfile)
